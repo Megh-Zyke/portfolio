@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.f801179d.css",
+    "main.js": "/portfolio/static/js/main.e0c4502f.js",
+    "static/js/787.663b98f5.chunk.js": "/portfolio/static/js/787.663b98f5.chunk.js",
+    "static/media/Laptop.jpg": "/portfolio/static/media/Laptop.2c529398e8a85d314199.jpg",
+    "static/media/4.png": "/portfolio/static/media/4.a978c1aa415d595ff670.png",
+    "static/media/1.png": "/portfolio/static/media/1.1e022f6baa0d5acc81c2.png",
+    "static/media/3.png": "/portfolio/static/media/3.f827af053aa2da4b6260.png",
+    "static/media/Code-doesnt-work.jpg": "/portfolio/static/media/Code-doesnt-work.ca15a12ed90bc21c5034.jpg",
+    "static/media/Me.jpg": "/portfolio/static/media/Me.f54d7c162197b96b8839.jpg",
+    "static/media/Your-old-code.jpg": "/portfolio/static/media/Your-old-code.a0255434f3bdd0aa91f4.jpg",
+    "static/media/2.png": "/portfolio/static/media/2.e103ead30026a62f7cf9.png",
+    "static/media/5.jpg": "/portfolio/static/media/5.dd3923d4f95a67bf7f88.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.f801179d.css.map": "/portfolio/static/css/main.f801179d.css.map",
+    "main.e0c4502f.js.map": "/portfolio/static/js/main.e0c4502f.js.map",
+    "787.663b98f5.chunk.js.map": "/portfolio/static/js/787.663b98f5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f801179d.css",
+    "static/js/main.e0c4502f.js"
+  ]
+}
