@@ -1,0 +1,76 @@
+
+.container {
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+    font-family: 'Gabarito', sans-serif;
+
+}
+
+
+.memeDiv{
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+
+
+.memeImage{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.aboutMe {
+    max-width: 425px;
+}
+
+.aboutMe h3 {
+    font-size: 18px;
+    color: #1524f0;
+    
+    
+}
+
+.aboutMe h2 {
+    text-align: justify;
+    font-family: 'Gabarito', sans-serif;;
+}
+
+.aboutMe p {
+    font-size: 16px;
+    color: #535354;
+    text-align: justify;
+}
+
+.memee{
+    color: black;
+}
+
+
+@media only screen and (max-width: 450px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .aboutMe {
+        max-width: 400px;
+    }
+
+    
+    .aboutMe h3 {
+        font-size: 20px;
+    }
+
+    .aboutMe h2 {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .aboutMe p {
+        font-size: 12px;
+    }
+  }

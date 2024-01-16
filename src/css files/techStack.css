@@ -1,0 +1,31 @@
+/* Add the following styles to your CSS file */
+
+.tech {
+    display: flex;
+    justify-content: center;
+}
+
+.skillSet {
+   
+   margin: 12px 0 ;
+    font-family: 'Gabarito', sans-serif;
+}
+
+.tech h3 {
+    font-weight: bolder;
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+
+.skillIcon {
+    height: 35px;
+    width: 35px;
+    margin: 0 10px; 
+    object-fit: contain;
+}
+
+
+.skillIcon:hover{
+    transform: scale(1.25);
+}

@@ -1,0 +1,74 @@
+
+.Box {
+    max-width: 800px;
+    gap : 50px;
+    padding: 20px;
+    border-radius: 10px;
+  
+    box-shadow: 0 0 10px #0000001a;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Box h2 {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .line {
+    max-width: 200px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .line img {
+   width: 100%;
+
+  }
+
+  form {
+    padding: 20% 0 ;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  label {
+    margin-bottom: 8px;
+  }
+  
+
+  input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+
+  button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+  button:hover {
+    background-color: #45a049;
+  }
+  
+
+
+  @media only screen and (max-width: 450px) {
+
+    .container {
+      max-width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
