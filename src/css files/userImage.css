@@ -12,7 +12,7 @@
   .shape {
     background-color :  #f0f0f0;
     animation: morph 8s ease-in-out infinite;
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  
     height: 300px;
     transition: all 1s ease-in-out;
     width: 300px;
@@ -55,7 +55,7 @@
     color: black;
   }
 
-  .mobile {
+  .mobileImg {
     display: none;
   }
 
@@ -81,23 +81,32 @@
   
 
 
+  
+   @media only screen and (max-height: 700px) {
+    .shape{
+      position: relative;
+      top: 50px;
+      width: 50%;
+    }
+  }
   @media only screen and (max-width: 450px) {
 
     .laptop {
       display: none;
     }
 
-    .mobile {
+    .mobileImg {
       display: initial;
     }
     .container {
       flex-direction: column;
       padding: 30px;
       gap : 50px;
-    }
+    } 
 
     .shape {
-  
+      top: 50px;
+      position: relative;
     }
   
     .myInfo {
@@ -122,5 +131,8 @@
     .links i {
       margin: 0 12px;
     }
+
   }
 
+
+  

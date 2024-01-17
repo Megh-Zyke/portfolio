@@ -27,7 +27,7 @@ function userImage() {
         <div class="container">
 
 
-        <div class="shape mobile">
+        <div class="shape mobileImg">
             <img src= {myImage} alt=""  class = "myImage" />  
         </div>
             <div class = "myInfo">
