@@ -44,11 +44,11 @@ function projectFunction(tech) {
       return ejs;
 
     case "mongodb":
-        return mongodb;
+      return mongodb;
+
     default:
       return ""; // Return an empty string for unknown tech
   }
 }
-
 
 export default projectFunction;

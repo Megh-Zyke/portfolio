@@ -5,10 +5,11 @@
     justify-content: center;
     padding: 10vh 0;
     font-family: 'Gabarito', sans-serif;
+    background-color: #f4f4f4;
 }
 
 .Header {
-    text-align: left;  
+    text-align: left;
     width: 900px;
 }
 

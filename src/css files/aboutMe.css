@@ -1,22 +1,17 @@
-
 .container {
     display: flex;
     gap: 75px;
     justify-content: center;
     font-family: 'Gabarito', sans-serif;
-
 }
 
-
-.memeDiv{
+.memeDiv {
     height: 350px;
     overflow: hidden;
     border-radius: 15px;
 }
 
-
-
-.memeImage{
+.memeImage {
     width: 100%;
     height: 100%;
     object-fit: fill;
@@ -29,13 +24,14 @@
 .aboutMe h3 {
     font-size: 18px;
     color: #1524f0;
-    
-    
+
+
 }
 
 .aboutMe h2 {
     text-align: justify;
-    font-family: 'Gabarito', sans-serif;;
+    font-family: 'Gabarito', sans-serif;
+    ;
 }
 
 .aboutMe p {
@@ -44,7 +40,7 @@
     text-align: justify;
 }
 
-.memee{
+.memee {
     color: black;
 }
 
@@ -60,7 +56,7 @@
         max-width: 400px;
     }
 
-    
+
     .aboutMe h3 {
         font-size: 20px;
     }
@@ -73,4 +69,4 @@
     .aboutMe p {
         font-size: 12px;
     }
-  }
+}

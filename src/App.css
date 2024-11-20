@@ -28,10 +28,46 @@
   color: #61dafb;
 }
 
+.tech-stack {
+  display: flex;
+  justify-content: space-around;
+}
+
+.github {
+  height: 30px;
+  width: 30px;
+}
+
+.view-all-button {
+  background-color: white;
+  color: rgb(178, 178, 178);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 2px solid rgb(178, 178, 178);
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: 'Arial', sans-serif;
+}
+
+.view-all-button:hover {
+  border-color: #000;
+  /* Black outline on hover */
+  color: #000;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* Intricate shadow effect */
+  transform: scale(1.05);
+  /* Slight zoom effect */
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

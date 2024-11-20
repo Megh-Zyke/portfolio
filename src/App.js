@@ -1,38 +1,21 @@
-import './App.css';
-import UserImage from './userImage';
-import Navbar from './navbar';
-import AboutMe from './aboutMe';
-import Projects from './projects';
-import ContactMe from './contactMe';
+import "./App.css";
+import AllProjects from "./AllProjects";
+import HomePage from "./HomePage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
-
   return (
- 
-    <div>
-        <Navbar />
-        <section id = "home">
-          <UserImage />
-        </section>
-       
-       <section id = "aboutMe">
-        <AboutMe />
-        </section>
-
-      <section id = "contact">
-      <Projects />
-      </section>
-   
-
-        
-
-        <section id = "contact">
-        <ContactMe />
-        </section>
-    </div>
-
-
-     );
+    <Router>
+      <ScrollToTop />
+      <div>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/projects" element={<AllProjects />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
 export default App;
