@@ -12,7 +12,7 @@ import "./css files/projects.css";
 function AllProjects() {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/");
+    navigate("/portfolio");
   };
   return (
     <div className="Container">
