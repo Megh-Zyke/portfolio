@@ -140,3 +140,49 @@ a.secondary {
     --button-secondary-border: #1a1a1a;
   }
 }
+
+.buttonStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+  background: transparent;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+/* Hover */
+.buttonStyle:hover {
+  background-color: #0077b5;
+  border-color: #0077b5;
+  color: #fff;
+}
+
+
+.active {
+
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: 2px solid #0077b5;
+
+  background-color: #0077b5;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
