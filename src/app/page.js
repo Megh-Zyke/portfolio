@@ -32,7 +32,7 @@ export default function Home() {
 
       </div>
 
-      <div>
+      <div id="about">
         <div style={{ display: showAboutMe ? 'block' : 'none' }}>
           <AboutMe />
         </div>

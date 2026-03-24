@@ -270,13 +270,13 @@ export default function Terminal() {
                 .terminal-content::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
                 .terminal-content::-webkit-scrollbar-thumb:hover { background: #475569; }
                 @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
                 .cursor {
                     display: inline-block;
-                    width: 8px;
+                    width: 7px;
                     height: 14px;
                     background: #a3e635;
                     margin-left: 2px;
-                    vertical-align: middle;
                     animation: blink 1s step-end infinite;
                 }
             `}</style>
@@ -295,7 +295,7 @@ export default function Terminal() {
                     {history.map((line, i) => (
                         <div key={i} style={{
                             color: line.type === 'command'
-                                ? '#38bdf8'
+                                ? '#38bdf8'   // subtle blue (matches your theme)
                                 : line.type === 'error'
                                     ? '#f87171'
                                     : line.type === 'ollama'
@@ -351,34 +351,44 @@ const terminalWrapper = {
 const terminalContainer = {
     width: '100%',
     maxWidth: '850px',
-    height: '80vh',
-    backgroundColor: 'rgba(15, 23, 42, 0.9)',
-    backdropFilter: 'blur(12px)',
-    borderRadius: '10px',
+    height: '75vh',
+
+    background: 'rgba(15, 15, 18, 0.75)',
+    backdropFilter: 'blur(18px)',
+    WebkitBackdropFilter: 'blur(18px)',
+
+    borderRadius: '14px',
+    border: '1px solid rgba(255, 255, 255, 0.08)',
+
+    boxShadow: '0 25px 60px rgba(0, 0, 0, 0.6)',
+
     overflow: 'hidden',
-    border: '1px solid rgba(255, 255, 255, 0.1)',
-    boxShadow: '0 30px 60px -12px rgba(0, 0, 0, 0.5)',
-    fontFamily: '"Fira Code", "JetBrains Mono", monospace',
+    fontFamily: '"JetBrains Mono", monospace',
+
+    transition: 'all 0.3s ease',
 };
 
 const topBar = {
-    background: '#1e293b',
-    height: '38px',
+    background: 'rgba(30, 30, 34, 0.8)',
+    backdropFilter: 'blur(12px)',
+
+    height: '42px',
     display: 'flex',
     alignItems: 'center',
-    padding: '0 15px',
-    position: 'relative',
+    padding: '0 14px',
+
+    borderBottom: '1px solid rgba(255,255,255,0.06)',
 };
 
 const controls = { display: 'flex', gap: '8px' };
 
 const dot = (color) => ({
-    width: '12px',
-    height: '12px',
+    width: '11px',
+    height: '11px',
     borderRadius: '50%',
-    backgroundColor: color,
+    background: color,
+    boxShadow: 'inset 0 0 0 1px rgba(0,0,0,0.1)',
 });
-
 const topBarText = {
     position: 'absolute',
     width: '100%',
@@ -390,13 +400,15 @@ const topBarText = {
 };
 
 const contentArea = {
-    padding: '18px',
-    height: '75vh',
+    padding: '20px',
+    height: 'calc(75vh - 42px)',
     overflowY: 'scroll',
-    fontSize: '14px',
-    lineHeight: '1.6',
-};
 
+    fontSize: '13px',
+    lineHeight: '1.7',
+
+    color: '#cbd5e1',
+};
 const inputLine = {
     display: 'flex',
     alignItems: 'center',
@@ -413,9 +425,11 @@ const promptStyle = {
 const inputStyle = {
     backgroundColor: 'transparent',
     border: 'none',
-    color: '#f8fafc',
+    color: '#e5e7eb',
+
     outline: 'none',
     width: '100%',
+
     fontFamily: 'inherit',
-    fontSize: '14px',
+    fontSize: '13px',
 };

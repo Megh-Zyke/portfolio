@@ -70,7 +70,7 @@ export default function HomePage() {
                     <div className="button-row" style={{ marginTop: '30px', display: 'flex', gap: '15px' }}>
 
                         {/* GitHub Button */}
-                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"
+                        <a href="https://github.com/Megh-Zyke" target="_blank" rel="noopener noreferrer"
                             style={{ ...buttonStyle, display: 'flex', alignItems: 'center', gap: '8px' }}
                             onMouseOver={e => { e.currentTarget.style.backgroundColor = '#333'; e.currentTarget.style.borderColor = '#333'; e.currentTarget.style.color = '#fff'; }}
                             onMouseOut={e => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.borderColor = '#38bdf8'; e.currentTarget.style.color = '#38bdf8'; }}>
@@ -79,7 +79,7 @@ export default function HomePage() {
                         </a>
 
                         {/* LinkedIn Button */}
-                        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer"
+                        <a href="https://linkedin.com/in/meghanandgejjela" target="_blank" rel="noopener noreferrer"
                             style={{ ...buttonStyle, display: 'flex', alignItems: 'center', gap: '8px' }}
                             onMouseOver={e => { e.currentTarget.style.backgroundColor = '#0077b5'; e.currentTarget.style.borderColor = '#0077b5'; e.currentTarget.style.color = '#fff'; }}
                             onMouseOut={e => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.borderColor = '#38bdf8'; e.currentTarget.style.color = '#38bdf8'; }}>
